@@ -2,6 +2,7 @@
 *.rawproto
 *.json
 *.iml
+*.xml
 *.bin
 *.lock
 *.flat
