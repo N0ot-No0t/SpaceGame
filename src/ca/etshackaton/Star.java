@@ -1,4 +1,4 @@
-package ca.nootCo;
+package ca.etshackaton;
 
 import javax.swing.*;
 import java.awt.*;

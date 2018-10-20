@@ -1,4 +1,4 @@
-package ca.nootCo;
+package ca.etshackaton;
 
 public class Main {
 

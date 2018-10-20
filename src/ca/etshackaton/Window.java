@@ -1,4 +1,4 @@
-package ca.nootCo;
+package ca.etshackaton;
 
 import javax.swing.*;
 
@@ -12,7 +12,7 @@ public class Window extends JFrame {
 
     public Window(){
 
-            this.setTitle("Moving Star");
+            this.setTitle("Space Game");
             this.setSize(WIDTH,HEIGHT);
             //this.setLayout(null);
 
