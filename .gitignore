@@ -1,0 +1,10 @@
+
+*.rawproto
+*.json
+*.iml
+*.bin
+*.lock
+*.flat
+*.txt
+.idea/workspace.xml
+.idea/workspace.xml
