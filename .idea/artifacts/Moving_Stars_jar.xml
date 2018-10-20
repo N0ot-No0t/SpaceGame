@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Moving Stars:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Moving_Stars_jar</output-path>
+    <root id="archive" name="Moving Stars.jar">
+      <element id="module-output" name="Moving Stars" />
+    </root>
+  </artifact>
+</component>
