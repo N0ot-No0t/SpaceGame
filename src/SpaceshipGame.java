@@ -1,4 +1,11 @@
-
+import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.BasicGame;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
+/**
+ * @author panos
+ */
 public class SpaceshipGame extends BasicGame
 {
 
@@ -35,3 +42,4 @@ public class SpaceshipGame extends BasicGame
     {
     }
 }
+

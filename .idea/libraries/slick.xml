@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="slick">
+    <CLASSES>
+      <root url="jar://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick/lib/slick.jar!/" />
+      <root url="jar://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick/lib/lwjgl.jar!/" />
+      <root url="jar://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick/lib/lwjgl_util.jar!/" />
+      <root url="jar://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick/lib/jinput.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick/src" />
+      <root url="file://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick/tools" />
+    </SOURCES>
+  </library>
+</component>
