@@ -1,13 +1,18 @@
+import org.newdawn.slick.Animation;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
+import org.newdawn.slick.tiled.TiledMap;
 /**
  * @author panos
  */
 public class SpaceshipGame extends BasicGame
 {
+    private Image SPACEMAP;
 
     public SpaceshipGame()
     {
@@ -19,7 +24,7 @@ public class SpaceshipGame extends BasicGame
         try
         {
             AppGameContainer app = new AppGameContainer(new SpaceshipGame());
-            app.setDisplayMode(500, 400, false);
+            app.setDisplayMode(1000, 800, false);
             app.start();
         }
         catch (SlickException e)
@@ -29,17 +34,16 @@ public class SpaceshipGame extends BasicGame
     }
 
     @Override
-    public void init(GameContainer container) throws SlickException
-    {
+    public void init(GameContainer container) throws SlickException {
+        SPACEMAP = new Image("SPACEMAP.jpg");
     }
 
     @Override
-    public void update(GameContainer container, int delta) throws SlickException
-    {
+    public void update(GameContainer container, int delta) throws SlickException {
     }
 
-    public void render(GameContainer container, Graphics g) throws SlickException
-    {
+    public void render(GameContainer container, Graphics g) throws SlickException {
+        SPACEMAP.draw();
     }
 }
 
