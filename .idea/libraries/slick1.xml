@@ -1,9 +1,9 @@
 <component name="libraryTable">
-  <library name="windows">
+  <library name="slick1">
     <CLASSES />
     <JAVADOC />
     <NATIVE>
-      <root url="file://$PROJECT_DIR$/lib/native/windows" />
+      <root url="file://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick" />
     </NATIVE>
     <SOURCES />
   </library>
