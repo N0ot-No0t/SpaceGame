@@ -17,6 +17,7 @@ public class SpaceshipGame extends BasicGame
     private Image SPACEMAP;
     private Image SPACESHIP;
     private float x, y;
+    private float speedX, speedY;
 
     Camera cam;
 
@@ -46,23 +47,61 @@ public class SpaceshipGame extends BasicGame
         SPACEMAP = new Image("SPACEMAP.jpg");
         SPACESHIP = new Image("SPACESHIP.gif");
         x=0;
+        speedX = 0;
         y=0;
 
         cam = new Camera(0,0);
+        speedY = 0;
     }
 
     @Override
     public void update(GameContainer container, int delta) throws SlickException {
         Input input = container.getInput();
 
+
         if(input.isKeyDown(Input.KEY_RIGHT) && (x<935))
-            x += 0.2*delta;
+            speedX += 0.002*delta;
         if(input.isKeyDown(Input.KEY_LEFT) && (x>0))
-            x -= 0.2*delta;
+            speedX -= 0.002*delta;
         if(input.isKeyDown(Input.KEY_UP) && (y>0))
-            y -= 0.2*delta;
+            speedY -= 0.002*delta;
         if(input.isKeyDown(Input.KEY_DOWN) && (y<740))
-            y += 0.2*delta;
+            speedY += 0.002*delta;
+
+        //do {
+            //if(((int)x)==935) {
+                //speedX = 0;
+                if (input.isKeyDown(Input.KEY_LEFT))
+
+                    if((x + speedX) > 0) {
+                        speedX -= 0.002 * delta;
+                    }
+            //}
+            if(((int)x)==0) {
+                //speedX = 0;
+                if (input.isKeyDown(Input.KEY_RIGHT))
+                    if((x + speedX) < 935) {
+                        speedX += 0.002 * delta;
+                    }
+            }
+            //if(((int)y)==0) {
+                speedY = 0;
+                if (input.isKeyDown(Input.KEY_DOWN))
+                    speedY += 0.002 * delta;
+            //}
+            //if(((int)y)==740) {
+                speedY = 0;
+                if (input.isKeyDown(Input.KEY_UP))
+                    speedY -= 0.002 * delta;
+            //}
+        //}while(input.)
+
+
+
+        x += speedX;
+        System.out.println(speedX);
+        y += speedY;
+        System.out.println(speedY);
         //x = input.getMouseX();
         //y = input.getMouseY();
         //SPACESHIP.rotate(delta);
