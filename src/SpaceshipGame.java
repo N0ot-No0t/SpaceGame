@@ -51,17 +51,17 @@ public class SpaceshipGame extends BasicGame
     public void update(GameContainer container, int delta) throws SlickException {
         Input input = container.getInput();
 
-        if(input.isKeyDown(Input.KEY_RIGHT) && (x<1000))
-            x += 0.1*delta;
+        if(input.isKeyDown(Input.KEY_RIGHT) && (x<935))
+            x += 0.2*delta;
         if(input.isKeyDown(Input.KEY_LEFT) && (x>0))
-            x -= 0.1*delta;
-        if(input.isKeyDown(Input.KEY_UP) && (y>-800))
-            y -= 0.1*delta;
-        if(input.isKeyDown(Input.KEY_DOWN) && (y<800))
-            y += 0.1*delta;
+            x -= 0.2*delta;
+        if(input.isKeyDown(Input.KEY_UP) && (y>0))
+            y -= 0.2*delta;
+        if(input.isKeyDown(Input.KEY_DOWN) && (y<740))
+            y += 0.2*delta;
         //x = input.getMouseX();
         //y = input.getMouseY();
-        ///SPACESHIP.rotate(delta);
+        //SPACESHIP.rotate(delta);
     }
 
     public void render(GameContainer container, Graphics g) throws SlickException {
