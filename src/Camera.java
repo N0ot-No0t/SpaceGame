@@ -10,7 +10,7 @@ public class Camera {
     public int camX;
     public int camY;
 
-    private Spaceship ship;
+   /** private Spaceship ship;
 
     public Camera(Spaceship s) {
 
@@ -26,9 +26,9 @@ public class Camera {
 
     public void update(GameContainer gc) {
 
-        camX = ship.getXpos() - (gc.getWidth() / 2);
-        camY = ship.getYpos() - (gc.getHeight() / 2);
+        //camX = ship.getXpos() - (gc.getWidth() / 2);
+        //camY = ship.getYpos() - (gc.getHeight() / 2);
 
     }
-
+**/
 }
