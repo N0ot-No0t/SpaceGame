@@ -10,6 +10,12 @@ import org.newdawn.slick.state.StateBasedGame;
  */
 public class SpaceshipGame extends BasicGame
 {
+<<<<<<< HEAD
+    private Image SPACEMAP;
+    private Image SPACESHIP;
+    private float x, y;
+=======
+>>>>>>> 0c64d4467ce2aedfb478fcee04cfb3babc1e6cc8
 
     public SpaceshipGame()
     {
@@ -23,6 +29,7 @@ public class SpaceshipGame extends BasicGame
             AppGameContainer app = new AppGameContainer(new SpaceshipGame());
             app.setDisplayMode(500, 400, false);
             app.start();
+            app.setTargetFrameRate(60);
         }
         catch (SlickException e)
         {
@@ -31,6 +38,25 @@ public class SpaceshipGame extends BasicGame
     }
 
     @Override
+<<<<<<< HEAD
+    public void init(GameContainer container) throws SlickException {
+        SPACEMAP = new Image("SPACEMAP.jpg");
+        SPACESHIP = new Image("SPACESHIP.gif");
+        x=0;
+        y=0;
+    }
+
+    @Override
+    public void update(GameContainer container, int delta) throws SlickException {
+        x += 0.1 * delta;
+        y += 0.1 * delta;
+        //SPACESHIP.rotate(delta);
+    }
+
+    public void render(GameContainer container, Graphics g) throws SlickException {
+        SPACEMAP.draw();
+        SPACESHIP.draw(x,y);
+=======
     public void init(GameContainer container) throws SlickException
     {
     }
@@ -58,6 +84,7 @@ public class SpaceshipGame extends BasicGame
 
         //Draw player
         player1.drawPlayer(g);
+>>>>>>> 0c64d4467ce2aedfb478fcee04cfb3babc1e6cc8
 
     }
 }
