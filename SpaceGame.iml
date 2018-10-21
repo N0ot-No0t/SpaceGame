@@ -7,8 +7,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="windows" level="project" />
-    <orderEntry type="library" name="lwjgl" level="application" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -24,6 +22,18 @@
           <root url="jar://$MODULE_DIR$/lib/slick.jar!/" />
         </CLASSES>
         <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="slick" level="project" />
+    <orderEntry type="library" exported="" name="slick1" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <NATIVE>
+          <root url="file://C:/My files/Programs/IntelliJ/Extra libraries/Slick2D/slick" />
+        </NATIVE>
         <SOURCES />
       </library>
     </orderEntry>
