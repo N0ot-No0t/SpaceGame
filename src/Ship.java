@@ -2,7 +2,7 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
 
-public class Ship extends GameObject
+public class Ship
 {
     public float x, y;
     private static Image ship;
