@@ -17,6 +17,7 @@ public class SpaceshipGame extends BasicGame
     private Image SPACEMAP;
     private Image SPACESHIP;
     private float x, y;
+    private double ratio = 0.001;
     private float speedX, speedY;
 
     public SpaceshipGame()
@@ -56,41 +57,35 @@ public class SpaceshipGame extends BasicGame
 
 
         if(input.isKeyDown(Input.KEY_RIGHT) && (x<935))
-            speedX += 0.002*delta;
+            speedX += ratio*delta;
         if(input.isKeyDown(Input.KEY_LEFT) && (x>0))
-            speedX -= 0.002*delta;
+            speedX -= ratio*delta;
         if(input.isKeyDown(Input.KEY_UP) && (y>0))
-            speedY -= 0.002*delta;
+            speedY -= ratio*delta;
         if(input.isKeyDown(Input.KEY_DOWN) && (y<740))
-            speedY += 0.002*delta;
+            speedY += ratio*delta;
 
         //do {
-            //if(((int)x)==935) {
-                //speedX = 0;
+            if(((int)x)==935) {
+                speedX = 0;
                 if (input.isKeyDown(Input.KEY_LEFT))
-
-                    if((x + speedX) > 0) {
-                        speedX -= 0.002 * delta;
-                    }
-            //}
-            if(((int)x)==0) {
-                //speedX = 0;
-                if (input.isKeyDown(Input.KEY_RIGHT))
-                    if((x + speedX) < 935) {
-                        speedX += 0.002 * delta;
-                    }
+                    speedX -= ratio* delta;
             }
-            //if(((int)y)==0) {
+            if(((int)x)==0) {
+                speedX = 0;
+                if (input.isKeyDown(Input.KEY_RIGHT))
+                    speedX += ratio* delta;
+            }
+            if(((int)y)==0) {
                 speedY = 0;
                 if (input.isKeyDown(Input.KEY_DOWN))
-                    speedY += 0.002 * delta;
-            //}
-            //if(((int)y)==740) {
+                    speedY += ratio* delta;
+            }
+            if(((int)y)==740) {
                 speedY = 0;
                 if (input.isKeyDown(Input.KEY_UP))
-                    speedY -= 0.002 * delta;
-            //}
-        //}while(input.)
+                    speedY -= ratio* delta;
+            }
 
 
 
