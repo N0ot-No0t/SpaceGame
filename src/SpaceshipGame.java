@@ -9,16 +9,17 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.tiled.TiledMap;
 
 /**
- * @author panos
+ * @author Razvan
  */
 public class SpaceshipGame extends BasicGame
 {
 
-    private Image SPACEMAP;
+    private TiledMap sm;
     private Image SPACESHIP;
     private float x, y;
     private double ratio = 0.001;
     private float speedX, speedY;
+
 
     Camera cam;
 
@@ -45,7 +46,7 @@ public class SpaceshipGame extends BasicGame
     @Override
 
     public void init(GameContainer container) throws SlickException {
-        SPACEMAP = new Image("SPACEMAP.jpg");
+        sm = new TiledMap("SPACEMAP.tmx");
         SPACESHIP = new Image("SPACESHIP.gif");
         x=0;
         speedX = 0;
@@ -103,7 +104,7 @@ public class SpaceshipGame extends BasicGame
     }
 
     public void render(GameContainer container, Graphics g) throws SlickException {
-        SPACEMAP.draw();
+        sm.render(0,0);
         SPACESHIP.draw(x,y);
 
     }
