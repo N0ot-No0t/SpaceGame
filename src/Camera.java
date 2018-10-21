@@ -1,34 +1,37 @@
-import org.newdawn.slick.GameContainer;
+
 
 public class Camera {
 
-    public int offsetMaxX;
-    public int offsetMaxY;
-    public int offsetMinX;
-    public int offsetMinY;
+    private float x, y;
 
-    public int camX;
-    public int camY;
+    public Camera(float x , float y){
+        this.x = x;
+        this.y = y;
+    }
 
-   /** private Spaceship ship;
+    public void tick(GameObject player){
 
-    public Camera(Spaceship s) {
 
-        //Setting offset max's and minimums
-        offsetMaxX = 0;
-        offsetMaxY = 0;
-        offsetMinX = 0;
-        offsetMinY = 0;
-
-        ship = s;
 
     }
 
-    public void update(GameContainer gc) {
 
-        //camX = ship.getXpos() - (gc.getWidth() / 2);
-        //camY = ship.getYpos() - (gc.getHeight() / 2);
+    public float getX(){
 
+        return x;
     }
-**/
+
+    public float getY() {
+        return y;
+    }
+
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
+
 }

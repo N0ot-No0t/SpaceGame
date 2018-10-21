@@ -18,6 +18,8 @@ public class SpaceshipGame extends BasicGame
     private Image SPACESHIP;
     private float x, y;
 
+    Camera cam;
+
     public SpaceshipGame()
     {
         super("Spaceship game");
@@ -45,6 +47,8 @@ public class SpaceshipGame extends BasicGame
         SPACESHIP = new Image("SPACESHIP.gif");
         x=0;
         y=0;
+
+        cam = new Camera(0,0);
     }
 
     @Override
@@ -67,6 +71,12 @@ public class SpaceshipGame extends BasicGame
     public void render(GameContainer container, Graphics g) throws SlickException {
         SPACEMAP.draw();
         SPACESHIP.draw(x,y);
+
+    }
+
+    private void tick(){
+
+
 
     }
 }
