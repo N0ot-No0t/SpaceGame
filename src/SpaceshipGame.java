@@ -20,6 +20,8 @@ public class SpaceshipGame extends BasicGame
     private double ratio = 0.001;
     private float speedX, speedY;
 
+    Camera cam;
+
     public SpaceshipGame()
     {
         super("Spaceship game");
@@ -48,6 +50,8 @@ public class SpaceshipGame extends BasicGame
         x=0;
         speedX = 0;
         y=0;
+
+        cam = new Camera(0,0);
         speedY = 0;
     }
 
@@ -101,6 +105,12 @@ public class SpaceshipGame extends BasicGame
     public void render(GameContainer container, Graphics g) throws SlickException {
         SPACEMAP.draw();
         SPACESHIP.draw(x,y);
+
+    }
+
+    private void tick(){
+
+
 
     }
 }
